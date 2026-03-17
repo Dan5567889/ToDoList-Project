@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="Dante.css">
 </head>
 <body>
@@ -11,22 +11,19 @@
     <nav>
         <div class="navTitle"> 
         <img src="Assets/Logo.png" alt="CheckMate Logo" class="logo">
-        <h2>CheckMate</h2>
+        <h2 >CheckMate</h2>
         </div>
         <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signUp.html">Sign Up </a></li>
             <li><a href="settings.html">Settings</a></li>
+            <li><a href="home.html">Sign Out</a></li>
         </ul>
     </nav>
+
     <div class="container">
-        <h1>Clarity, Finally.</h1>
-        <h2>Join 100+ other people who are making work a whole lot simpler.  </h2>
-        <img src="Assets/paper.png" alt="paper" class="paper">
-        <a href="signup.html">
-            <button>Get Started today</button>
-          </a>
+        <h1>Light/Dark Mode</h1>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
-<script src="settings.js"></script>
+
+    <script src="settings.js"></script>
 </body>
 </html>
