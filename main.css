@@ -19,6 +19,10 @@ body{
     border-radius: 20px;
     }
 
+    .container.dark-mode {
+      background-color: #738E7E;
+    }
+
 body.dark-mode {
     background-color: #233833;
     color: white;
@@ -56,6 +60,15 @@ nav{
     gap: 10px;
     align-items: center;
     color: white;
+}
+
+a{
+  color: white; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: greenyellow; /* Mouse over link */
 }
 
 /*PC*/
