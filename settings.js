@@ -1,19 +1,19 @@
 const toggleDarkMode = () => {
     const body = document.body;
-    
     const nav = document.querySelector("nav");
     const container = document.querySelector(".container");
-    const loginContainer = document.querySelector(".login-container");
     body.classList.toggle("dark-mode");
     nav.classList.toggle("dark-mode");
     container.classList.toggle("dark-mode");
-    loginContainer.classList.toggle("dark-mode");
-    console.log("Dark mode toggled");
+    
 
-if (body.classList.contains("dark-mode") && nav.classList.contains("dark-mode") && container.classList.contains("dark-mode") && loginContainer.classList.contains("dark-mode")) {
+if (body.classList.contains("dark-mode") && nav.classList.contains("dark-mode") && container.classList.contains("dark-mode") ) {
         localStorage.setItem("theme", "dark");
+        alert("Dark mode enabled");
+        
     } else {
         localStorage.setItem("theme", "light");
+        alert("Dark mode disabled");
     }
 };
 
