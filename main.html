@@ -2,22 +2,38 @@
 <html>
     <head>
         <title>To-Do list page display</title>
-        <link rel="stylesheet" href="main2.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main2.css">
     </head>
     <body>
-        <nav>
-            <div id="logo">
-                <img src="assets/logo.png" alt="CheckMate logo">
+       <nav class="nav-desktop">
+        <div class="navTitle"> 
+            <a href="main.html">
+        <img src="Assets/Logo.png" alt="CheckMate Logo" class="logo">
+        </a>
+        <h2>CheckMate</h2>
+        </div>
+        <ul>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="home.html">Sign Out </a></li>
+        </ul>
+    </nav>
+
+    <nav class="nav-mobile">
+        <div class="navTitle"> 
+            <a href="main.html">
+                <img src="Assets/Logo.png" alt="CheckMate Logo" class="logo">
+                </a>
                 <h2>CheckMate</h2>
             </div>
-            <div id="navigation">
-                <ul>
-                    <a href="settings.html"><li><h3>Settings</h3></li></a>
-                    <li><h3>Signout</h3></li>
-                </ul>
-            </div>
-        </nav>
+            <div class="dropdown">
+                <img src="Assets/menu.png" alt="CheckMate Logo" class="dropbtn">
+                <div class="dropdown-content">
+                  <a href="settings.html">Settings</a>
+                  <a href="home.html">Sign Out</a>
+                </div>
+              </div>
+    </nav>
         <div class="taskCreate">
             <h2>Add New Task</h2>
             <form>
@@ -41,7 +57,7 @@
             </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="taskManager">
             <h2>Manage Tasks</h2>
             <form>
                 <input type="text" id="taskID" class="standardInpt" placeholder="Enter Task ID">
