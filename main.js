@@ -39,6 +39,9 @@ const querySnapshot = await getDocs(q);
                     case "near-completion":
                         li.style.backgroundColor = "green";
                         break;
+                        case "complete":
+                        li.style.backgroundColor = "green";
+                        break;
                     default:
                         li.style.backgroundColor = "transparent";
                 }
