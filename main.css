@@ -26,6 +26,14 @@ body {
   background-color: rgba(97, 136, 112, 0.3);
   border-radius: 20px;
 }
+@media screen and (max-width: 799px) {
+.container{
+  width:75%
+}
+.container img{
+  width:80%;
+}
+  }
 
 button {
   background-color: #415B41;
